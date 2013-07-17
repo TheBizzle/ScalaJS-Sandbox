@@ -2,7 +2,7 @@ import sbt._
 
 import java.io.PrintWriter
 
-import com.google.debugging.sourcemap.{ FilePosition, SourceMapConsumerV3, SourceMapGeneratorFactory, SourceMapFormat, _ }
+import com.google.debugging.sourcemap.{ FilePosition, SourceMapConsumerV3, SourceMapGeneratorFactory, SourceMapFormat }
 
 object ScalaJSSourceMaps {
   /** Concatenate JS files and their respective source maps
