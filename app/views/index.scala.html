@@ -1,7 +1,10 @@
 @(message: String)
 
 @main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message)
-    
+  <script type="text/javascript" src='@routes.Assets.at("javascripts/scalajs-runtime.js")'></script>
+  <script type="text/javascript" src='@routes.Assets.at("javascripts/client/HelloWorld.js")'></script>
+  <div id="playground"></div>
+  <script type="text/javascript">
+    $ScalaJSEnvironment.m["client.HelloWorld"].main();
+  </script>
 }
